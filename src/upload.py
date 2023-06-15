@@ -18,7 +18,7 @@ def create_vector_store(uploaded_file):
     st.success("Vector Store is Created Successfully!")
 
 
-def page_upload(sidebar):
+def page_upload():
     st.subheader("Upload Multiple PDFs")
     uploaded_file = st.file_uploader(
         "Choose .txt,.pdf,.csv,.doc file",
@@ -29,4 +29,3 @@ def page_upload(sidebar):
     if uploaded_file:
         save_uploaded_file(uploaded_file)
         create_vector_store(uploaded_file)
-        sidebar.write("- " + uploaded_file.name)
