@@ -1,0 +1,10 @@
+credentials:
+  usernames:
+    name: # Replace with your name
+      email: 
+      name: 
+      password: #hashed password
+cookie:
+  expiry_days: 30
+  key:  # Must be string
+  name: cookie
